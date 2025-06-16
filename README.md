@@ -1,4 +1,4 @@
-# MovieFinder - A React Movie Search App Prototype
+# MovieSearch - A React Movie Search App Prototype
 
 This is a basic prototype of a movie search web application built with React.js. It allows users to search for movies using the OMDB API and view details about them.
 
@@ -35,7 +35,7 @@ You can obtain your own API key from [http://www.omdbapi.com/apikey.aspx](http:/
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/Adarsh0074/Movie-Search (https://github.com/Adarsh0074/Movie-Search)
+git clone https://github.com/Akhiil222/Movie-Search (https://github.com/Akhiil222/Movie-Search)
 cd Movie-Search
 ```
 
