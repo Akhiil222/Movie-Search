@@ -10,7 +10,7 @@ This is a basic prototype of a movie search web application built with React.js.
 
 ## Live Demo 
 
-https://rococo-beignet-595ee9.netlify.app/
+https://moviiesearch.netlify.app/
 
 ## API Key
 
