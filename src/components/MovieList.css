@@ -1,0 +1,26 @@
+.movie-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 25px; 
+  padding: 20px 0;
+}
+
+.no-movies-message {
+  font-size: 1.3em;
+  color: #a0a0e0; 
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .movie-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 15px;
+  }
+}

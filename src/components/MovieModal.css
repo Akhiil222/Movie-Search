@@ -1,0 +1,140 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(16, 22, 36, 0.85); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); 
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #1f1f3d; 
+  padding: 30px;
+  border-radius: 15px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 800px; 
+  max-height: 90vh; 
+  overflow-y: auto; 
+  position: relative; 
+  border: 1px solid #3a3a5e; 
+  animation: fadeInModal 0.3s ease-out;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #a0a0e0; 
+  font-size: 2.2em; 
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close-button:hover {
+  color: #e43f5a; 
+  transform: scale(1.1);
+}
+
+.modal-body {
+  display: flex;
+  gap: 25px; 
+  align-items: flex-start; 
+}
+
+.modal-poster {
+  width: 250px; 
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #e43f5a; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.modal-details {
+  flex: 1; 
+  color: #c0c0e0; 
+  text-align: left;
+}
+
+.modal-details h2 {
+  font-size: 2.2em;
+  color: #f7f7f7; 
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e43f5a; 
+  padding-bottom: 10px;
+}
+
+.modal-details p {
+  font-size: 1.05em;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.modal-details p strong {
+  color: #e0e0e0; 
+  margin-right: 8px;
+}
+
+.modal-details p span[role="img"] {
+  margin-left: 5px;
+  color: #ffd700; 
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+    max-width: 95%;
+  }
+  .modal-body {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+  .modal-poster {
+    width: 200px; 
+    margin-bottom: 20px;
+  }
+  .modal-details {
+    text-align: left; 
+  }
+  .modal-details h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .modal-close-button {
+    top: 10px;
+    right: 10px;
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-poster {
+    width: 100%;
+    max-width: 180px; 
+  }
+  .modal-details h2 {
+    font-size: 1.6em;
+  }
+  .modal-details p {
+    font-size: 0.95em;
+  }
+}
