@@ -1,4 +1,4 @@
-# MovieSearch - A React Movie Search App Prototype
+# MovieFinder - A React Movie Search App Prototype
 
 This is a basic prototype of a movie search web application built with React.js. It allows users to search for movies using the OMDB API and view details about them.
 
